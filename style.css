@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Thiết lập Flex Container */
+.container {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 10px;
+  gap: 10px;
+  border: 2px solid #ccc;
+}
+
+/* Định dạng chung cho 5 Flex Item */
+.item {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  /* Các item còn lại có giá trị flex-grow mặc định là 0 (hoặc 1 tùy thiết lập) */
+  flex-grow: 1; 
+}
+
+/* Áp dụng flex-grow lớn hơn cho item thứ 2 */
+.item-2 {
+  background-color: #ff9800; /* Đổi màu để dễ nhận biết */
+  flex-grow: 3; /* Phát triển rộng gấp nhiều lần các item khác */
+}
